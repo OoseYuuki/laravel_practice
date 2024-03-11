@@ -12,3 +12,6 @@ ps:
 
 logs:
 	docker-compose logs -f app
+
+shell:
+	docker-compose exec app bash
