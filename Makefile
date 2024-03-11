@@ -15,3 +15,15 @@ logs:
 
 shell:
 	docker-compose exec app bash
+
+tinker:
+	docker-compose exec app php artisan tinker
+
+migrate:
+	docker-compose exec app php artisan migrate
+
+refresh:
+	docker-compose exec app php artisan migrate:refresh
+
+dev:
+	docker-compose exec app npm run dev
