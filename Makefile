@@ -24,3 +24,6 @@ migrate:
 
 refresh:
 	docker-compose exec app php artisan migrate:refresh
+
+dev:
+	docker-compose exec app npm run dev
